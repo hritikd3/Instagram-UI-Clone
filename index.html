@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Instagram | Be simple, Be Social</title>
+    <link rel="icon" href="data:image/jpeg;base64,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">
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-wrapper">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png"
+          class="insta-logo"
+          alt=""
+        />
+        <input type="text " class="search-box" placeholder="search " />
+        <div class="nav-items">
+          <img src="img/home.png" class="icons" alt="" />
+          <img src="img/messenger.png" class="icons" alt="" />
+          <img src="img/add.png" class="icons" alt="" />
+          <img src="img/explore.png" class="icons" alt="" />
+          <img src="img/like.png" class="icons" alt="" />
+
+          <div class="icons user-profiles"></div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="main">
+      <div class="wrapper">
+        <div class="left-col">
+          <div class="status-wrapper">
+            <div class="status-card">
+              <div class="profile-pic"><img src="img/cover 1.png" /></div>
+              <p class="username">username_1</p>
+            </div>
+            <div class="status-card">
+              <div class="profile-pic"><img src="img/cover 2.png" /></div>
+              <p class="username">username_1</p>
+            </div>
+            <div class="status-card">
+              <div class="profile-pic"><img src="img/cover 3.png" /></div>
+              <p class="username">username_1</p>
+            </div>
+            <div class="status-card">
+              <div class="profile-pic"><img src="img/cover 4.png" /></div>
+              <p class="username">username_1</p>
+            </div>
+            <div class="status-card">
+              <div class="profile-pic"><img src="img/cover 5.png" /></div>
+              <p class="username">username_1</p>
+            </div>
+            <div class="status-card">
+              <div class="profile-pic"><img src="img/cover 6.png" /></div>
+              <p class="username">username_1</p>
+            </div>
+            <div class="status-card">
+              <div class="profile-pic"><img src="img/cover 7.png" /></div>
+              <p class="username">username_1</p>
+            </div>
+            <div class="status-card">
+              <div class="profile-pic"><img src="img/cover 8.png" /></div>
+              <p class="username">username_1</p>
+            </div>
+          </div>
+
+          <div class="post">
+            <div class="info">
+              <div class="user">
+                <div class="profile-pic"><img src="img/cover 3.png" /></div>
+                <p class="username">hritik singh</p>
+              </div>
+              <img src="img/option.PNG" alt="" class="options" />
+            </div>
+            <img src="img/cover 3.png" alt="" class="post-image" />
+            <div class="post-content">
+              <div class="reaction">
+                <img src="img/like.PNG" alt="" class="icon" />
+                <img src="img/comment.PNG" alt="" class="icon" />
+                <img src="img/send.PNG" alt="" class="icon" />
+                <img src="img/save.PNG" alt="" class="icon save" />
+              </div>
+              <p class="likes">1389 likes</p>
+              <p class="description">
+                <span>suername_1</span> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Est vel officiis atque in soluta veniam
+                recusandae ipsum ipsa, molestiae natus molestias voluptatibus
+                amet vero, modi animi consequatur doloribus? Est, assumenda?
+              </p>
+              <p class="post-time">12 minutes ago..</p>
+            </div>
+            <div class="comment-wrapper">
+              <img src="img/smile.PNG" alt="" class="icon" />
+              <input
+                type="text"
+                class="comment-box"
+                placeholder="Add a comment"
+              />
+              <button class="commentBtn">Post</button>
+            </div>
+          </div>
+          <div class="post">
+            <div class="info">
+              <div class="user">
+                <div class="profile-pic"><img src="img/cover 2.png" /></div>
+                <p class="username">hritik singh</p>
+              </div>
+              <img src="img/option.PNG" alt="" class="options" />
+            </div>
+            <img src="img/cover 2.png" alt="" class="post-image" />
+            <div class="post-content">
+              <div class="reaction">
+                <img src="img/like.PNG" alt="" class="icon" />
+                <img src="img/comment.PNG" alt="" class="icon" />
+                <img src="img/send.PNG" alt="" class="icon" />
+                <img src="img/save.PNG" alt="" class="icon save" />
+              </div>
+              <p class="likes">1389 likes</p>
+              <p class="description">
+                <span>suername_1</span> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Est vel officiis atque in soluta veniam
+                recusandae ipsum ipsa, molestiae natus molestias voluptatibus
+                amet vero, modi animi consequatur doloribus? Est, assumenda?
+              </p>
+              <p class="post-time">12 minutes ago..</p>
+            </div>
+            <div class="comment-wrapper">
+              <img src="img/smile.PNG" alt="" class="icon" />
+              <input
+                type="text"
+                class="comment-box"
+                placeholder="Add a comment"
+              />
+              <button class="commentBtn">Post</button>
+            </div>
+          </div>
+          <div class="post">
+            <div class="info">
+              <div class="user">
+                <div class="profile-pic"><img src="img/cover 4.png" /></div>
+                <p class="username">hritik singh</p>
+              </div>
+              <img src="img/option.PNG" alt="" class="options" />
+            </div>
+            <img src="img/cover 4.png" alt="" class="post-image" />
+            <div class="post-content">
+              <div class="reaction">
+                <img src="img/like.PNG" alt="" class="icon" />
+                <img src="img/comment.PNG" alt="" class="icon" />
+                <img src="img/send.PNG" alt="" class="icon" />
+                <img src="img/save.PNG" alt="" class="icon save" />
+              </div>
+              <p class="likes">1389 likes</p>
+              <p class="description">
+                <span>suername_1</span> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Est vel officiis atque in soluta veniam
+                recusandae ipsum ipsa, molestiae natus molestias voluptatibus
+                amet vero, modi animi consequatur doloribus? Est, assumenda?
+              </p>
+              <p class="post-time">12 minutes ago..</p>
+            </div>
+            <div class="comment-wrapper">
+              <img src="img/smile.PNG" alt="" class="icon" />
+              <input
+                type="text"
+                class="comment-box"
+                placeholder="Add a comment"
+              />
+              <button class="commentBtn">Post</button>
+            </div>
+          </div>
+          <div class="post">
+            <div class="info">
+              <div class="user">
+                <div class="profile-pic"><img src="img/cover 5.png" /></div>
+                <p class="username">hritik singh</p>
+              </div>
+              <img src="img/option.PNG" alt="" class="options" />
+            </div>
+            <img src="img/cover 5.png" alt="" class="post-image" />
+            <div class="post-content">
+              <div class="reaction">
+                <img src="img/like.PNG" alt="" class="icon" />
+                <img src="img/comment.PNG" alt="" class="icon" />
+                <img src="img/send.PNG" alt="" class="icon" />
+                <img src="img/save.PNG" alt="" class="icon save" />
+              </div>
+              <p class="likes">1389 likes</p>
+              <p class="description">
+                <span>suername_1</span> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Est vel officiis atque in soluta veniam
+                recusandae ipsum ipsa, molestiae natus molestias voluptatibus
+                amet vero, modi animi consequatur doloribus? Est, assumenda?
+              </p>
+              <p class="post-time">12 minutes ago..</p>
+            </div>
+            <div class="comment-wrapper">
+              <img src="img/smile.PNG" alt="" class="icon" />
+              <input
+                type="text"
+                class="comment-box"
+                placeholder="Add a comment"
+              />
+              <button class="commentBtn">Post</button>
+            </div>
+          </div>
+          <div class="post">
+            <div class="info">
+              <div class="user">
+                <div class="profile-pic"><img src="img/cover 6.png" /></div>
+                <p class="username">hritik singh</p>
+              </div>
+              <img src="img/option.PNG" alt="" class="options" />
+            </div>
+            <img src="img/cover 6.png" alt="" class="post-image" />
+            <div class="post-content">
+              <div class="reaction">
+                <img src="img/like.PNG" alt="" class="icon" />
+                <img src="img/comment.PNG" alt="" class="icon" />
+                <img src="img/send.PNG" alt="" class="icon" />
+                <img src="img/save.PNG" alt="" class="icon save" />
+              </div>
+              <p class="likes">1389 likes</p>
+              <p class="description">
+                <span>suername_1</span> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Est vel officiis atque in soluta veniam
+                recusandae ipsum ipsa, molestiae natus molestias voluptatibus
+                amet vero, modi animi consequatur doloribus? Est, assumenda?
+              </p>
+              <p class="post-time">12 minutes ago..</p>
+            </div>
+            <div class="comment-wrapper">
+              <img src="img/smile.PNG" alt="" class="icon" />
+              <input
+                type="text"
+                class="comment-box"
+                placeholder="Add a comment"
+              />
+              <button class="commentBtn">Post</button>
+            </div>
+          </div>
+          <div class="post">
+            <div class="info">
+              <div class="user">
+                <div class="profile-pic"><img src="img/cover 7.png" /></div>
+                <p class="username">hritik singh</p>
+              </div>
+              <img src="img/option.PNG" alt="" class="options" />
+            </div>
+            <img src="img/cover 7.png" alt="" class="post-image" />
+            <div class="post-content">
+              <div class="reaction">
+                <img src="img/like.PNG" alt="" class="icon" />
+                <img src="img/comment.PNG" alt="" class="icon" />
+                <img src="img/send.PNG" alt="" class="icon" />
+                <img src="img/save.PNG" alt="" class="icon save" />
+              </div>
+              <p class="likes">1389 likes</p>
+              <p class="description">
+                <span>suername_1</span> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Est vel officiis atque in soluta veniam
+                recusandae ipsum ipsa, molestiae natus molestias voluptatibus
+                amet vero, modi animi consequatur doloribus? Est, assumenda?
+              </p>
+              <p class="post-time">12 minutes ago..</p>
+            </div>
+            <div class="comment-wrapper">
+              <img src="img/smile.PNG" alt="" class="icon" />
+              <input
+                type="text"
+                class="comment-box"
+                placeholder="Add a comment"
+              />
+              <button class="commentBtn">Post</button>
+            </div>
+          </div>
+          <div class="post">
+            <div class="info">
+              <div class="user">
+                <div class="profile-pic"><img src="img/cover 8.png" /></div>
+                <p class="username">hritik singh</p>
+              </div>
+              <img src="img/option.PNG" alt="" class="options" />
+            </div>
+            <img src="img/cover 8.png" alt="" class="post-image" />
+            <div class="post-content">
+              <div class="reaction">
+                <img src="img/like.PNG" alt="" class="icon" />
+                <img src="img/comment.PNG" alt="" class="icon" />
+                <img src="img/send.PNG" alt="" class="icon" />
+                <img src="img/save.PNG" alt="" class="icon save" />
+              </div>
+              <p class="likes">1389 likes</p>
+              <p class="description">
+                <span>suername_1</span> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Est vel officiis atque in soluta veniam
+                recusandae ipsum ipsa, molestiae natus molestias voluptatibus
+                amet vero, modi animi consequatur doloribus? Est, assumenda?
+              </p>
+              <p class="post-time">12 minutes ago..</p>
+            </div>
+            <div class="comment-wrapper">
+              <img src="img/smile.PNG" alt="" class="icon" />
+              <input
+                type="text"
+                class="comment-box"
+                placeholder="Add a comment"
+              />
+              <button class="commentBtn">Post</button>
+            </div>
+          </div>
+          <div class="post">
+            <div class="info">
+              <div class="user">
+                <div class="profile-pic"><img src="img/cover 10.png" /></div>
+                <p class="username">hritik singh</p>
+              </div>
+              <img src="img/option.PNG" alt="" class="options" />
+            </div>
+            <img src="img/cover 10.png" alt="" class="post-image" />
+            <div class="post-content">
+              <div class="reaction">
+                <img src="img/like.PNG" alt="" class="icon" />
+                <img src="img/comment.PNG" alt="" class="icon" />
+                <img src="img/send.PNG" alt="" class="icon" />
+                <img src="img/save.PNG" alt="" class="icon save" />
+              </div>
+              <p class="likes">1389 likes</p>
+              <p class="description">
+                <span>suername_1</span> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Est vel officiis atque in soluta veniam
+                recusandae ipsum ipsa, molestiae natus molestias voluptatibus
+                amet vero, modi animi consequatur doloribus? Est, assumenda?
+              </p>
+              <p class="post-time">12 minutes ago..</p>
+            </div>
+            <div class="comment-wrapper">
+              <img src="img/smile.PNG" alt="" class="icon" />
+              <input
+                type="text"
+                class="comment-box"
+                placeholder="Add a comment"
+              />
+              <button class="commentBtn">Post</button>
+            </div>
+          </div>
+          <div class="post">
+            <div class="info">
+              <div class="user">
+                <div class="profile-pic"><img src="img/cover 9.png" /></div>
+                <p class="username">hritik singh</p>
+              </div>
+              <img src="img/option.PNG" alt="" class="options" />
+            </div>
+            <img src="img/cover 9.png" alt="" class="post-image" />
+            <div class="post-content">
+              <div class="reaction">
+                <img src="img/like.PNG" alt="" class="icon" />
+                <img src="img/comment.PNG" alt="" class="icon" />
+                <img src="img/send.PNG" alt="" class="icon" />
+                <img src="img/save.PNG" alt="" class="icon save" />
+              </div>
+              <p class="likes">1389 likes</p>
+              <p class="description">
+                <span>suername_1</span> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Est vel officiis atque in soluta veniam
+                recusandae ipsum ipsa, molestiae natus molestias voluptatibus
+                amet vero, modi animi consequatur doloribus? Est, assumenda?
+              </p>
+              <p class="post-time">12 minutes ago..</p>
+            </div>
+            <div class="comment-wrapper">
+              <img src="img/smile.PNG" alt="" class="icon" />
+              <input
+                type="text"
+                class="comment-box"
+                placeholder="Add a comment"
+              />
+              <button class="commentBtn">Post</button>
+            </div>
+          </div>
+          <div class="post">
+            <div class="info">
+              <div class="user">
+                <div class="profile-pic"><img src="img/cover 11.png" /></div>
+                <p class="username">hritik singh</p>
+              </div>
+              <img src="img/option.PNG" alt="" class="options" />
+            </div>
+            <img src="img/cover 11.png" alt="" class="post-image" />
+            <div class="post-content">
+              <div class="reaction">
+                <img src="img/like.PNG" alt="" class="icon" />
+                <img src="img/comment.PNG" alt="" class="icon" />
+                <img src="img/send.PNG" alt="" class="icon" />
+                <img src="img/save.PNG" alt="" class="icon save" />
+              </div>
+              <p class="likes">1389 likes</p>
+              <p class="description">
+                <span>suername_1</span> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Est vel officiis atque in soluta veniam
+                recusandae ipsum ipsa, molestiae natus molestias voluptatibus
+                amet vero, modi animi consequatur doloribus? Est, assumenda?
+              </p>
+              <p class="post-time">12 minutes ago..</p>
+            </div>
+            <div class="comment-wrapper">
+              <img src="img/smile.PNG" alt="" class="icon" />
+              <input
+                type="text"
+                class="comment-box"
+                placeholder="Add a comment"
+              />
+              <button class="commentBtn">Post</button>
+            </div>
+          </div>
+          <div class="post">
+            <div class="info">
+              <div class="user">
+                <div class="profile-pic"><img src="img/cover 12.png" /></div>
+                <p class="username">hritik singh</p>
+              </div>
+              <img src="img/option.PNG" alt="" class="options" />
+            </div>
+            <img src="img/cover 12.png" alt="" class="post-image" />
+            <div class="post-content">
+              <div class="reaction">
+                <img src="img/like.PNG" alt="" class="icon" />
+                <img src="img/comment.PNG" alt="" class="icon" />
+                <img src="img/send.PNG" alt="" class="icon" />
+                <img src="img/save.PNG" alt="" class="icon save" />
+              </div>
+              <p class="likes">1389 likes</p>
+              <p class="description">
+                <span>suername_1</span> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Est vel officiis atque in soluta veniam
+                recusandae ipsum ipsa, molestiae natus molestias voluptatibus
+                amet vero, modi animi consequatur doloribus? Est, assumenda?
+              </p>
+              <p class="post-time">12 minutes ago..</p>
+            </div>
+            <div class="comment-wrapper">
+              <img src="img/smile.PNG" alt="" class="icon" />
+              <input
+                type="text"
+                class="comment-box"
+                placeholder="Add a comment"
+              />
+              <button class="commentBtn">Post</button>
+            </div>
+          </div>
+          <div class="post">
+            <div class="info">
+              <div class="user">
+                <div class="profile-pic"><img src="img/cover 13.png" /></div>
+                <p class="username">hritik singh</p>
+              </div>
+              <img src="img/option.PNG" alt="" class="options" />
+            </div>
+            <img src="img/cover 13.png" alt="" class="post-image" />
+            <div class="post-content">
+              <div class="reaction">
+                <img src="img/like.PNG" alt="" class="icon" />
+                <img src="img/comment.PNG" alt="" class="icon" />
+                <img src="img/send.PNG" alt="" class="icon" />
+                <img src="img/save.PNG" alt="" class="icon save" />
+              </div>
+              <p class="likes">1389 likes</p>
+              <p class="description">
+                <span>suername_1</span> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Est vel officiis atque in soluta veniam
+                recusandae ipsum ipsa, molestiae natus molestias voluptatibus
+                amet vero, modi animi consequatur doloribus? Est, assumenda?
+              </p>
+              <p class="post-time">12 minutes ago..</p>
+            </div>
+            <div class="comment-wrapper">
+              <img src="img/smile.PNG" alt="" class="icon" />
+              <input
+                type="text"
+                class="comment-box"
+                placeholder="Add a comment"
+              />
+              <button class="commentBtn">Post</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- section1:left column ended -->
+
+        <!-- section 2 : right com=lumn stsarted -->
+
+        <div class="right-col">
+          <div class="profile-card">
+  <div class="profile-pic">
+      <img src="data:image/jpeg;base64,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" alt="">
+  </div>
+  <div>
+      <p class="username">mevidyutjammwal</p>
+      <p class="sub-text">Vidyut Jammwal</p>
+  </div>
+  <button class="action-btn">Switch</button>   
+          </div>
+          <p class="suggestion-text">Suggestions for you</p>
+         
+
+          <div class="profile-card">
+  <div class="profile-pic">
+      <img src="img/cover 5.png" alt="">
+  </div>
+  <div>
+      <p class="username">callme_vickykaushal</p>
+      <p class="sub-text">Followed by shahrukh_1</p>
+  </div>
+  <button class="action-btn">Follow</button>   
+          </div>
+         
+           <div class="profile-card">
+  <div class="profile-pic">
+      <img src="img/cover 3.png" alt="">
+  </div>
+  <div>
+      <p class="username">i_amsunny_23</p>
+      <p class="sub-text">New to Instagram</p>
+  </div>
+  <button class="action-btn">Follow</button>   
+          </div>
+         
+<div class="profile-card">
+  <div class="profile-pic">
+      <img src="img/cover 2.png" alt="">
+  </div>
+  <div>
+      <p class="username">pearl_on_floor</p>
+      <p class="sub-text">New to Instagram</p>
+  </div>
+  <button class="action-btn">Follow</button>   
+          </div>
+
+          <div class="profile-card">
+  <div class="profile-pic">
+      <img src="img/cover 9.png" alt="">
+  </div>
+  <div>
+      <p class="username">nitya_1212singh</p>
+      <p class="sub-text">Followed by 23_rock</p>
+  </div>
+  <button class="action-btn">Follow</button>   
+          </div>
+
+
+         </div>
+      </div>
+    </section>
+  </body>
+</html>
